@@ -6,7 +6,7 @@ import Inputfds from "../inputfileds/Inputfds";
 import Dropdownfilteer from "../dropdownfilter/Dropdown";
 
 const Billscomponent = () => {
-    const [ingredient, setIngredient] = useState<string>('Prepaid'); // Default to "Prepaid"
+    const [ingredient, setIngredient] = useState<string>('Prepaid'); 
 
     return (
         <div style={{ backgroundColor: "whitesmoke", flex: 1, padding: 80, paddingTop: 0 }}>
@@ -16,7 +16,6 @@ const Billscomponent = () => {
                     className="md:w-25rem"
                     style={{ padding: 20, borderRadius: 20 }}
                 >
-                    {/* Pass `ingredient` and `setIngredient` as props */}
                     <Radiobtn ingredient={ingredient} setIngredient={setIngredient} />
                     <Dropdownfilteer />
 
