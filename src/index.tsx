@@ -5,6 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Billspage from "./component/common/billui/Bill";
+import Loancomponent from './component/common/billui/Loan';
 
 const router = createBrowserRouter([
   {
@@ -15,6 +16,10 @@ const router = createBrowserRouter([
     path: "/mobilebill",
     element: <Billspage />,
   },
+  {
+    path: "/loan-payment",
+    element: <Loancomponent />,
+  }
 ]);
 
 const root = ReactDOM.createRoot(
