@@ -4,12 +4,15 @@ import { Card } from "primereact/card";
 import Radiobtn from "../radiobtn/Radiobtn";
 import Inputfds from "../inputfileds/Inputfds";
 import Dropdownfilteer from "../dropdownfilter/Dropdown";
+import Navbar from '../navbar/Navbar';
 
 const Billscomponent = () => {
     const [ingredient, setIngredient] = useState<string>('Prepaid'); 
 
     return (
-        <div style={{ backgroundColor: "whitesmoke", flex: 1, padding: 80, paddingTop: 0 }}>
+        <>
+        <Navbar/>
+        <div style={{ backgroundColor: "whitesmoke", flex: 1, padding: 80, paddingTop: "5%" }}>
             <div className="card flex justify-content-start">
                 <Card
                     title="Recharge or Pay Mobile Bill"
@@ -39,6 +42,7 @@ const Billscomponent = () => {
                 </Card>
             </div>
         </div>
+        </>
     );
 };
 
