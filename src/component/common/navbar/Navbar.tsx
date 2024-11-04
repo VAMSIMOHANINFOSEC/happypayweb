@@ -43,12 +43,36 @@ export default function Navbar() {
 
     ];
 
-    const start = <img alt="logo" src={Logo} height="40" className="mr-2" />;
+    const start = <a href='/'><img alt="logo" src={Logo} height="70" className="mr-2" /></a>;
     const end = (
         <div className="flex align-items-center gap-3" >
-            <p>Get app</p>
-            <p>Coins</p>
-            <Avatar image="https://primefaces.org/cdn/primereact/images/avatar/amyelsner.png" shape="circle" />
+            <p>Get app: <i className="pi pi-apple"/> <i className="pi pi-android"/>
+            </p>
+            <div className="flex align-items-center">
+  <p style={{
+    backgroundColor: "lightblue",
+    padding: 5,
+    paddingRight:15,
+    borderTopLeftRadius: 10,
+    borderBottomLeftRadius: 10,
+    overflow: "auto",
+    marginRight: -7,  
+    zIndex: 1,         
+    position: "relative",
+    fontSize:13,
+    fontWeight:"bold"
+  }}>
+    You have: {"250"} <i className='pi pi-stop-circle ' style={{color:"gold"}}/>
+  </p>
+  <Avatar
+    image="https://primefaces.org/cdn/primereact/images/avatar/amyelsner.png"
+    shape="circle"
+    style={{
+      border: "2px solid white", 
+      zIndex: 2,  height:40 , width:40              
+    }}
+  />
+</div>
         </div>
     );
 
